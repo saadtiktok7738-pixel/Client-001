@@ -10,7 +10,7 @@ const googleClientId = import.meta.env.VITE_GOOGLE_CLIENT_ID || "";
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <HelmetProvider>
-      <GoogleOAuthProvider clientId={"16721760057-ers08usj9ie1pjts1nstesmtpq3favap.apps.googleusercontent.com"}>
+      <GoogleOAuthProvider clientId={import.meta.env.VITE_GOOGLE_CLIENT_ID}>
         <App />
       </GoogleOAuthProvider>
     </HelmetProvider>
